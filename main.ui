@@ -1,0 +1,1870 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1274</width>
+    <height>833</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1271</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTabWidget" name="tabWidget_2">
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <widget class="QWidget" name="tabsub_1">
+        <attribute name="title">
+         <string>1차_기본정보</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_1">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>10</y>
+           <width>921</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>연결상태</string>
+         </property>
+         <widget class="QLabel" name="Label_conn1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>키움로그인</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Label_conn3">
+          <property name="geometry">
+           <rect>
+            <x>290</x>
+            <y>20</y>
+            <width>91</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>이베스트로그인</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Line_conn1">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>20</y>
+            <width>111</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Line_conn3">
+          <property name="geometry">
+           <rect>
+            <x>390</x>
+            <y>20</y>
+            <width>111</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Login_Kiwoom">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>20</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>로그인</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Login_Ebest">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>20</y>
+            <width>75</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>로그인</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="Conn_State">
+          <property name="geometry">
+           <rect>
+            <x>810</x>
+            <y>10</y>
+            <width>111</width>
+            <height>41</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>연결상태확인</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>70</y>
+           <width>921</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>필터조건</string>
+         </property>
+         <widget class="QPushButton" name="gb2button1">
+          <property name="geometry">
+           <rect>
+            <x>814</x>
+            <y>10</y>
+            <width>101</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>조회</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>160</y>
+           <width>1261</width>
+           <height>481</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>1차종목조회</string>
+         </property>
+         <widget class="QTableWidget" name="tableWidget_1">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>20</y>
+            <width>1261</width>
+            <height>451</height>
+           </rect>
+          </property>
+          <row>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>적정/비적정</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>종목코드</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>종목명</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>현재가</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>종목분류</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>PER</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>EPS</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>부채비율</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>매출총이익률</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>영업이익률</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>BT영업이익증가율</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>순이익률</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>영업활동현금흐름</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>재무활동현금흐름</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>투자활동현금흐름</string>
+           </property>
+          </column>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_5">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>650</y>
+           <width>1031</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>결과보기</string>
+         </property>
+         <widget class="QLabel" name="gb5label1">
+          <property name="geometry">
+           <rect>
+            <x>840</x>
+            <y>30</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>적정종목수</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="gb5line1">
+          <property name="geometry">
+           <rect>
+            <x>910</x>
+            <y>30</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb5label2">
+          <property name="geometry">
+           <rect>
+            <x>830</x>
+            <y>70</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>비적정종목수</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="gb5line2">
+          <property name="geometry">
+           <rect>
+            <x>910</x>
+            <y>70</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_6">
+         <property name="geometry">
+          <rect>
+           <x>1040</x>
+           <y>650</y>
+           <width>221</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>2차분석으로이동</string>
+         </property>
+         <widget class="QPushButton" name="gb6button1">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>20</y>
+            <width>75</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>2차로 이동</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb6chk1">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>적정만 넘기기</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb6chk2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>전 종목 넘기기</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb6chk3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>80</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>한 종목 넘기기</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_3">
+         <property name="geometry">
+          <rect>
+           <x>930</x>
+           <y>70</y>
+           <width>331</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>버튼모음</string>
+         </property>
+         <widget class="QLineEdit" name="gb3line1">
+          <property name="geometry">
+           <rect>
+            <x>79</x>
+            <y>20</y>
+            <width>145</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="gb3button1">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>20</y>
+            <width>71</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>찾기</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb3label1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>종목명</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="gb3combo1">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>50</y>
+            <width>141</width>
+            <height>22</height>
+           </rect>
+          </property>
+          <item>
+           <property name="text">
+            <string>PER</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>EPS</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>부채비율</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>매출총이익률</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>영업이익률</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>BT영업이익증가율</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>순이익률</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QPushButton" name="gb3button2">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>50</y>
+            <width>71</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>정렬</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb3label2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>정렬기준</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tabsub_2">
+        <attribute name="title">
+         <string>2차_재무제표</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_2_1">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>921</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>필터조건</string>
+         </property>
+         <widget class="QPushButton" name="gb2_1button1">
+          <property name="geometry">
+           <rect>
+            <x>840</x>
+            <y>10</y>
+            <width>75</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>조회</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_2_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>90</y>
+           <width>1261</width>
+           <height>281</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>2차종목조회</string>
+         </property>
+         <widget class="QTableWidget" name="tableWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>20</y>
+            <width>1261</width>
+            <height>251</height>
+           </rect>
+          </property>
+          <row>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>적정/비적정</string>
+           </property>
+          </column>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_2_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>650</y>
+           <width>1031</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>결과보기</string>
+         </property>
+         <widget class="QLabel" name="gb2_4label1">
+          <property name="geometry">
+           <rect>
+            <x>840</x>
+            <y>30</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>적정종목수</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="gb2_4line1">
+          <property name="geometry">
+           <rect>
+            <x>910</x>
+            <y>30</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb2_4label2">
+          <property name="geometry">
+           <rect>
+            <x>830</x>
+            <y>70</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>비적정종목수</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="gb2_4line2">
+          <property name="geometry">
+           <rect>
+            <x>910</x>
+            <y>70</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_2_5">
+         <property name="geometry">
+          <rect>
+           <x>1040</x>
+           <y>650</y>
+           <width>221</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>3차분석으로이동</string>
+         </property>
+         <widget class="QPushButton" name="gb2_5button1">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>20</y>
+            <width>75</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>2차로 이동</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb2_5chk1">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>적정만 넘기기</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb2_5chk2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>전 종목 넘기기</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb2_5chk3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>80</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>한 종목 넘기기</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_2_2">
+         <property name="geometry">
+          <rect>
+           <x>930</x>
+           <y>0</y>
+           <width>331</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>버튼모음</string>
+         </property>
+         <widget class="QLineEdit" name="gb2_2line1">
+          <property name="geometry">
+           <rect>
+            <x>79</x>
+            <y>20</y>
+            <width>145</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="gb2_2button1">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>20</y>
+            <width>71</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>찾기</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb2_2label1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>종목명</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="gb2_2combo1">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>50</y>
+            <width>141</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="gb2_2button2">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>50</y>
+            <width>71</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>정렬</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb2_2label2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>정렬기준</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_2_6">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>380</y>
+           <width>1261</width>
+           <height>261</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>년도별 분기 데이터</string>
+         </property>
+         <widget class="QTabWidget" name="tabWidget_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>20</y>
+            <width>1261</width>
+            <height>231</height>
+           </rect>
+          </property>
+          <property name="currentIndex">
+           <number>0</number>
+          </property>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>2015</string>
+           </attribute>
+           <widget class="QTableWidget" name="tableWidget_3">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>1261</width>
+              <height>201</height>
+             </rect>
+            </property>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_6">
+           <attribute name="title">
+            <string>2016</string>
+           </attribute>
+           <widget class="QTableWidget" name="tableWidget_4">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>1261</width>
+              <height>201</height>
+             </rect>
+            </property>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_7">
+           <attribute name="title">
+            <string>2017</string>
+           </attribute>
+           <widget class="QTableWidget" name="tableWidget_5">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>1261</width>
+              <height>201</height>
+             </rect>
+            </property>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_8">
+           <attribute name="title">
+            <string>2018</string>
+           </attribute>
+           <widget class="QTableWidget" name="tableWidget_6">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>1261</width>
+              <height>201</height>
+             </rect>
+            </property>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_9">
+           <attribute name="title">
+            <string>2019</string>
+           </attribute>
+           <widget class="QTableWidget" name="tableWidget_7">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>1261</width>
+              <height>201</height>
+             </rect>
+            </property>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_10">
+           <attribute name="title">
+            <string>2020</string>
+           </attribute>
+           <widget class="QTableWidget" name="tableWidget_8">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>1261</width>
+              <height>201</height>
+             </rect>
+            </property>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+           </widget>
+          </widget>
+          <widget class="QWidget" name="tab_11">
+           <attribute name="title">
+            <string>2021</string>
+           </attribute>
+           <widget class="QTableWidget" name="tableWidget_9">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>1261</width>
+              <height>201</height>
+             </rect>
+            </property>
+            <row>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </row>
+           </widget>
+          </widget>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tabsub_3">
+        <attribute name="title">
+         <string>3차_변동성,유동성</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_3_1">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>921</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>필터조건</string>
+         </property>
+         <widget class="QPushButton" name="gb3_1button1">
+          <property name="geometry">
+           <rect>
+            <x>840</x>
+            <y>10</y>
+            <width>75</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>조회</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_3_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>90</y>
+           <width>1261</width>
+           <height>551</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>3차종목조회</string>
+         </property>
+         <widget class="QTableWidget" name="tableWidget_10">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>20</y>
+            <width>1261</width>
+            <height>521</height>
+           </rect>
+          </property>
+          <row>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>적정/비적정</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>종목코드</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>종목명</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>분산</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>n일 최대값</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>n일 최소값</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>이격도</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>거래량</string>
+           </property>
+          </column>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_3_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>650</y>
+           <width>1031</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>결과보기</string>
+         </property>
+         <widget class="QLabel" name="gb3_4label1">
+          <property name="geometry">
+           <rect>
+            <x>840</x>
+            <y>30</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>적정종목수</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="gb3_4line1">
+          <property name="geometry">
+           <rect>
+            <x>910</x>
+            <y>30</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb3_4label2">
+          <property name="geometry">
+           <rect>
+            <x>830</x>
+            <y>70</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>비적정종목수</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="gb3_4line2">
+          <property name="geometry">
+           <rect>
+            <x>910</x>
+            <y>70</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_3_5">
+         <property name="geometry">
+          <rect>
+           <x>1040</x>
+           <y>650</y>
+           <width>221</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>4차분석으로이동</string>
+         </property>
+         <widget class="QPushButton" name="gb3_5button1">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>20</y>
+            <width>75</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>2차로 이동</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb3_5chk1">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>적정만 넘기기</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb3_5chk2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>전 종목 넘기기</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb3_5chk3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>80</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>한 종목 넘기기</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_3_2">
+         <property name="geometry">
+          <rect>
+           <x>930</x>
+           <y>0</y>
+           <width>331</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>버튼모음</string>
+         </property>
+         <widget class="QLineEdit" name="gb3_2line1">
+          <property name="geometry">
+           <rect>
+            <x>79</x>
+            <y>20</y>
+            <width>145</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="gb3_2button1">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>20</y>
+            <width>71</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>찾기</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb3_2label1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>종목명</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="gb3_2combo1">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>50</y>
+            <width>141</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="gb3_2button2">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>50</y>
+            <width>71</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>정렬</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb3_2label2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>정렬기준</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tabsub_4">
+        <attribute name="title">
+         <string>4차_주가예측</string>
+        </attribute>
+        <widget class="QGroupBox" name="groupBox_4_1">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>921</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>필터조건</string>
+         </property>
+         <widget class="QPushButton" name="gb4_1button1">
+          <property name="geometry">
+           <rect>
+            <x>840</x>
+            <y>10</y>
+            <width>75</width>
+            <height>61</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>조회</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb4_1label1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>희망수익률</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="gb4_1line1">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>20</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_4_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>90</y>
+           <width>1261</width>
+           <height>551</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>4차종목조회</string>
+         </property>
+         <widget class="QTableWidget" name="tableWidget_11">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>20</y>
+            <width>1261</width>
+            <height>521</height>
+           </rect>
+          </property>
+          <row>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </row>
+          <column>
+           <property name="text">
+            <string>적정/비적정</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>종목코드</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>종목명</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>현재가</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>기존PER</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>예상PER</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>기존EPS</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>예상EPS</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>예상주가1</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>예상주가2</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>예상수익률</string>
+           </property>
+          </column>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_4_5">
+         <property name="geometry">
+          <rect>
+           <x>1040</x>
+           <y>650</y>
+           <width>221</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>5차분석으로이동</string>
+         </property>
+         <widget class="QPushButton" name="gb4_5button1">
+          <property name="geometry">
+           <rect>
+            <x>130</x>
+            <y>20</y>
+            <width>75</width>
+            <height>81</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>2차로 이동</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb4_5chk1">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>적정만 넘기기</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb4_5chk2">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>50</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>전 종목 넘기기</string>
+          </property>
+         </widget>
+         <widget class="QCheckBox" name="gb4_5chk3">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>80</y>
+            <width>101</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>한 종목 넘기기</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_4_2">
+         <property name="geometry">
+          <rect>
+           <x>930</x>
+           <y>0</y>
+           <width>331</width>
+           <height>81</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>버튼모음</string>
+         </property>
+         <widget class="QLineEdit" name="gb4_2line1">
+          <property name="geometry">
+           <rect>
+            <x>79</x>
+            <y>20</y>
+            <width>145</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>100</width>
+            <height>0</height>
+           </size>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="gb4_2button1">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>20</y>
+            <width>71</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>찾기</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb4_2label1">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>종목명</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="gb4_2combo1">
+          <property name="geometry">
+           <rect>
+            <x>80</x>
+            <y>50</y>
+            <width>141</width>
+            <height>22</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="gb4_2button2">
+          <property name="geometry">
+           <rect>
+            <x>230</x>
+            <y>50</y>
+            <width>71</width>
+            <height>23</height>
+           </rect>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>40</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>정렬</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoRepeat">
+           <bool>false</bool>
+          </property>
+          <property name="autoExclusive">
+           <bool>false</bool>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb4_2label2">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>50</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>정렬기준</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QGroupBox" name="groupBox_4_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>650</y>
+           <width>1031</width>
+           <height>111</height>
+          </rect>
+         </property>
+         <property name="title">
+          <string>결과보기</string>
+         </property>
+         <widget class="QLabel" name="gb4_4label1">
+          <property name="geometry">
+           <rect>
+            <x>840</x>
+            <y>30</y>
+            <width>61</width>
+            <height>21</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>적정종목수</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="gb4_4line1">
+          <property name="geometry">
+           <rect>
+            <x>910</x>
+            <y>30</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLabel" name="gb4_4label2">
+          <property name="geometry">
+           <rect>
+            <x>830</x>
+            <y>70</y>
+            <width>71</width>
+            <height>16</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>비적정종목수</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="gb4_4line2">
+          <property name="geometry">
+           <rect>
+            <x>910</x>
+            <y>70</y>
+            <width>113</width>
+            <height>20</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="tabsub_5">
+        <attribute name="title">
+         <string>5차_수급분석</string>
+        </attribute>
+       </widget>
+       <widget class="QWidget" name="tabsub_6">
+        <attribute name="title">
+         <string>최종정리</string>
+        </attribute>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1274</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
